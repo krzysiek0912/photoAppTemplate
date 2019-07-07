@@ -9,6 +9,9 @@ nav {
 
   right: 0;
 }
+.nav-link {
+  letter-spacing: 2.5px;
+}
 @media screen and (max-width: 767px) {
   .navbar {
     display: block;
@@ -17,6 +20,7 @@ nav {
 @media screen and (min-width: 768px) {
   .navbar-brand {
     margin: 0;
+    padding-left: 10px;
   }
   .navbar {
     height: 158px;
@@ -39,7 +43,7 @@ nav {
 }
 @media screen and (min-width: 992px) {
   .navbar {
-    max-width: 992px;
+    max-width: 962px;
   }
 
   // #nav-left {

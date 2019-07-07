@@ -1,5 +1,6 @@
 header {
-  min-height: 100vh;
+  //   min-height: 100vh;
+  height: 745px;
   background-image: url(../images/bg_header.jpg);
   background-size: cover;
   display: flex;
@@ -7,8 +8,9 @@ header {
   justify-content: space-between;
   text-align: center;
   p {
+    font-size: 1.6rem;
     color: $white;
-    letter-spacing: 3px;
+    letter-spacing: 2.3px;
   }
   [class*="icon-"]:before {
     font-size: 22px;
@@ -20,5 +22,8 @@ header {
     .btn {
       margin-top: 10px;
     }
+  }
+  .social {
+    padding-bottom: 22px;
   }
 }
