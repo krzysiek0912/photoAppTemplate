@@ -29,6 +29,17 @@ p {
   font-weight: 100;
   letter-spacing: 1.9px;
 }
+button {
+  border: 0;
+  background-color: $cyan;
+  height: 60px;
+  line-height: 60px;
+  color: $white;
+  text-transform: uppercase;
+  width: 295px;
+  text-align: left;
+  font-size: 18px;
+}
 .btn {
   padding: 12px 33px;
   font-size: 1.2rem;
