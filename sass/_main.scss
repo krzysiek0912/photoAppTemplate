@@ -35,14 +35,6 @@ main {
     }
   }
   .design {
-    .container {
-      background-image: url(../images/phone.jpg);
-      background-position: bottom left 40px;
-      padding: 102px 0 75px 65px;
-    }
-    .content {
-      padding-left: 0;
-    }
     .carousel-item {
       padding-bottom: 22px;
       span {
@@ -62,6 +54,7 @@ main {
     text-align: center;
     .container {
       padding-top: 95px;
+      padding-bottom: 110px;
     }
     .col-md-3 img {
       margin-top: 73px;
@@ -76,6 +69,7 @@ main {
     #carouselImages {
       .carousel-item {
         padding-top: 30px;
+        padding-bottom: 10px;
       }
       .container-arrow {
         position: absolute;
@@ -88,15 +82,74 @@ main {
       }
     }
   }
-}
 
-@media screen and (max-width: 767px) {
-  main .hand-bg .container,
-  main .design .container {
-    background-image: none;
-    text-align: center;
+  .newsletter {
+    background-image: url(../images/newsletter.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      text-align: center;
+    }
+    .newsletter-input {
+      display: flex;
+      justify-content: center;
+    }
+    input {
+      width: 280px;
+      height: 60px;
+      line-height: 60px;
+      text-transform: uppercase;
+      padding: 0 20px;
+      font-size: 16px;
+      letter-spacing: 2.3px;
+    }
+    button {
+      height: 60px;
+      width: 60px;
+      border: 0;
+      background-color: $cyan;
+    }
     h2 {
-      padding-right: 0;
+      color: $white;
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .design {
+    .container {
+      background-image: url(../images/phone.jpg);
+      background-position: bottom left 40px;
+      padding: 102px 0 75px 65px;
+    }
+    .content {
+      padding-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  main {
+    .hand-bg .container,
+    .design .container {
+      background-image: none;
+      text-align: center;
+      h2 {
+        padding-right: 0;
+      }
+    }
+    .container-arrow {
+      width: 100%;
+    }
+    .carousel-item .row > div {
+      padding-bottom: 10px;
     }
   }
 }
