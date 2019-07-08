@@ -1,4 +1,5 @@
 main {
+  overflow: hidden;
   .container-arrow {
     position: absolute;
     bottom: 0;
@@ -56,9 +57,12 @@ main {
       padding-top: 95px;
       padding-bottom: 110px;
     }
-    .col-md-3 img {
-      margin-top: 73px;
+    .row {
+      align-items: center;
     }
+    // .col-md-3 img {
+    //   margin-top: 73px;
+    // }
     h2 {
       margin: 27px 0px 17px;
     }
@@ -89,6 +93,9 @@ main {
     background-size: cover;
     min-height: 100vh;
     display: flex;
+    .row {
+      max-width: 100%;
+    }
     .container {
       display: flex;
       justify-content: center;
@@ -100,9 +107,11 @@ main {
     .newsletter-input {
       display: flex;
       justify-content: center;
+      align-items: center;
     }
     input {
       width: 280px;
+      max-width: 100%;
       height: 60px;
       line-height: 60px;
       text-transform: uppercase;
@@ -110,11 +119,7 @@ main {
       font-size: 16px;
       letter-spacing: 2.3px;
     }
-    button {
-      height: 60px;
-      width: 60px;
-      text-align: center;
-    }
+
     h2 {
       color: $white;
       font-size: 25px;
@@ -134,6 +139,12 @@ main {
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  main .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   main {
     .hand-bg .container,
@@ -144,11 +155,19 @@ main {
         padding-right: 0;
       }
     }
+
     .container-arrow {
       width: 100%;
     }
     .carousel-item .row > div {
       padding-bottom: 10px;
+    }
+    .newsletter .newsletter-input {
+      flex-direction: column;
+      .btn.btn-square {
+        width: 280px;
+        max-width: 100%;
+      }
     }
   }
 }

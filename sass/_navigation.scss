@@ -12,9 +12,19 @@ nav {
 .nav-link {
   letter-spacing: 2.5px;
 }
+.navbar-toggler-icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+.navbar-dark .navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
 @media screen and (max-width: 767px) {
   .navbar {
     display: block;
+  }
+  .navbar-nav {
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) {
