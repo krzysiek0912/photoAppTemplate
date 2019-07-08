@@ -45,6 +45,8 @@ img {
 //   font-size: 18px;
 // }
 .btn {
+  background-color: $cyan;
+  color: $white;
   padding: 12px 33px;
   font-size: 1.2rem;
   font-size: 18px;
@@ -55,6 +57,8 @@ img {
   &.btn-section {
     margin: 30px 0;
     padding: 16px 42px;
+    width: auto;
+    font-size: 12px;
   }
   &.btn-square {
     padding: 0;
@@ -62,5 +66,36 @@ img {
     height: 60px;
     width: 60px;
     text-align: center;
+  }
+  &.btn-apple,
+  &.btn-android {
+    background-color: $green;
+    padding-right: 60px;
+    position: relative;
+    margin-bottom: 5px;
+    text-align: left;
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 56px;
+      height: 100%;
+      background-color: $cyan;
+    }
+  }
+  &.btn-apple::after {
+    background-image: url(../images/apple.svg);
+  }
+  &.btn-android::after {
+    background-image: url(../images/android.svg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-apple,
+  .btn-android {
+    margin: 5px 12px;
   }
 }

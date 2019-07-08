@@ -1,3 +1,6 @@
+.container {
+  padding: 0 65px 0;
+}
 main {
   overflow: hidden;
   .container-arrow {
@@ -19,7 +22,8 @@ main {
   }
 
   .container {
-    padding: 70px 65px 60px;
+    padding-top: 70px;
+    padding-bottom: 60px;
     background-repeat: no-repeat;
     background-size: auto;
   }
@@ -126,6 +130,25 @@ main {
       margin-bottom: 25px;
     }
   }
+  .download {
+    text-align: center;
+    h2 {
+      letter-spacing: 4.4px;
+      margin-bottom: 6px;
+      margin-top: 21px;
+      line-height: 22px;
+    }
+    p {
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 32px;
+      line-height: 22px;
+      letter-spacing: 1.8px;
+    }
+    .buttons-download {
+      margin-bottom: 60px;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .design {
@@ -137,6 +160,9 @@ main {
     .content {
       padding-left: 0;
     }
+  }
+  .download p {
+    padding: 0 60px;
   }
 }
 @media screen and (max-width: 1199px) {
