@@ -2,9 +2,11 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Gotham Rounded";
 }
+
 h1 {
   font-size: 3.6rem;
   color: $white;
@@ -13,37 +15,30 @@ h1 {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
 h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2.8px;
   margin: 39px auto;
   font-weight: bold;
+
   &.green {
     color: $cyan;
   }
 }
+
 p {
   font-size: 1.2rem;
   line-height: 24px;
   font-weight: 100;
   letter-spacing: 1.9px;
 }
+
 img {
   max-width: 100%;
 }
-// button {
-//   border: 0;
-//   background-color: $cyan;
-//   height: 60px;
-//   line-height: 60px;
-//   color: $white;
-//   text-transform: uppercase;
-//   width: 295px;
-//   max-width: 100%;
-//   text-align: left;
-//   font-size: 18px;
-// }
+
 .btn {
   background-color: $cyan;
   color: $white;
@@ -54,12 +49,14 @@ img {
   letter-spacing: 2px;
   max-width: 100%;
   width: 295px;
+
   &.btn-section {
     margin: 30px 0;
     padding: 16px 42px;
     width: auto;
     font-size: 12px;
   }
+
   &.btn-square {
     padding: 0;
     background-color: $cyan;
@@ -67,6 +64,7 @@ img {
     width: 60px;
     text-align: center;
   }
+
   &.btn-apple,
   &.btn-android {
     background-color: $green;
@@ -74,6 +72,7 @@ img {
     position: relative;
     margin-bottom: 5px;
     text-align: left;
+
     &::after {
       content: "";
       background-repeat: no-repeat;
@@ -86,9 +85,11 @@ img {
       background-color: $cyan;
     }
   }
+
   &.btn-apple::after {
     background-image: url(../images/apple.svg);
   }
+
   &.btn-android::after {
     background-image: url(../images/android.svg);
   }

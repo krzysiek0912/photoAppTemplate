@@ -1,10 +1,12 @@
 footer {
   padding: 40px 0 60px;
+
   .container .row > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .footer-menu {
     width: 100%;
     display: flex;
@@ -12,21 +14,25 @@ footer {
     padding: 0;
     font-size: 14px;
     margin-bottom: 20px;
-
     text-transform: uppercase;
+
     li {
       padding: 0 10px;
       border-right: 2px solid $cyan;
       letter-spacing: 1.7px;
       line-height: 13px;
+
       &:first-of-type {
         padding-left: 0;
       }
+
       &:last-of-type {
         border-right: none;
       }
+
       a {
         color: #373737;
+
         &:hover {
           text-decoration: none;
           color: $cyan;
@@ -34,6 +40,7 @@ footer {
       }
     }
   }
+
   p {
     letter-spacing: 3.1px;
   }
@@ -41,9 +48,11 @@ footer {
 @media screen and (max-width: 767px) {
   footer {
     text-align: center;
+
     .container .row > div {
       flex-direction: column;
     }
+
     .footer-menu {
       justify-content: center;
       align-items: center;

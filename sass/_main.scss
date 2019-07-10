@@ -1,12 +1,11 @@
-.container {
-  padding: 0 65px 0;
-}
 main {
   overflow: hidden;
+
   .container-arrow {
     position: absolute;
     bottom: 0;
   }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 11px;
@@ -27,21 +26,22 @@ main {
     background-repeat: no-repeat;
     background-size: auto;
   }
-  .gray {
-    background-color: $gray-100;
-  }
+
   .hand-bg {
     .container {
       background-image: url(../images/hand_phone.jpg);
       background-position: bottom right 60px;
     }
+
     h2 {
       padding-right: 50px;
     }
   }
+
   .design {
     .carousel-item {
       padding-bottom: 22px;
+
       span {
         font-weight: bold;
         display: block;
@@ -49,41 +49,51 @@ main {
         font-size: 15px;
       }
     }
+
     p {
       margin-top: -4px;
       line-height: 22px;
       margin-bottom: 5px;
     }
   }
+
   .our-community {
     text-align: center;
+
     .container {
       padding-top: 95px;
       padding-bottom: 110px;
     }
+
     .row {
       align-items: center;
     }
-    // .col-md-3 img {
-    //   margin-top: 73px;
-    // }
+
     h2 {
       margin: 27px 0px 17px;
     }
+
     p {
       font-size: 10px;
       line-height: 12px;
     }
+
     #carouselImages {
+      .row {
+        margin: 0;
+      }
+
       .carousel-item {
         padding-top: 30px;
         padding-bottom: 10px;
       }
+
       .container-arrow {
         position: absolute;
-        right: 0;
+        right: 15px;
         top: 0;
         bottom: auto;
+
         .carousel-control-prev-icon {
           margin-right: 12px;
         }
@@ -97,22 +107,27 @@ main {
     background-size: cover;
     min-height: 100vh;
     display: flex;
+
     .row {
       max-width: 100%;
     }
+
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .content {
       text-align: center;
     }
+
     .newsletter-input {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     input {
       width: 280px;
       max-width: 100%;
@@ -130,14 +145,17 @@ main {
       margin-bottom: 25px;
     }
   }
+
   .download {
     text-align: center;
+
     h2 {
       letter-spacing: 4.4px;
       margin-bottom: 6px;
       margin-top: 21px;
       line-height: 22px;
     }
+
     p {
       text-transform: uppercase;
       font-weight: 400;
@@ -145,11 +163,13 @@ main {
       line-height: 22px;
       letter-spacing: 1.8px;
     }
+
     .buttons-download {
       margin-bottom: 60px;
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .design {
     .container {
@@ -157,14 +177,17 @@ main {
       background-position: bottom left 40px;
       padding: 102px 0 75px 65px;
     }
+
     .content {
       padding-left: 0;
     }
   }
+
   .download p {
     padding: 0 60px;
   }
 }
+
 @media screen and (max-width: 1199px) {
   main .container {
     padding-left: 15px;
@@ -177,6 +200,7 @@ main {
     .design .container {
       background-image: none;
       text-align: center;
+
       h2 {
         padding-right: 0;
       }
@@ -185,11 +209,14 @@ main {
     .container-arrow {
       width: 100%;
     }
+
     .carousel-item .row > div {
       padding-bottom: 10px;
     }
+
     .newsletter .newsletter-input {
       flex-direction: column;
+
       .btn.btn-square {
         width: 280px;
         max-width: 100%;

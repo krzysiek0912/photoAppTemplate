@@ -2,15 +2,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "./typography";
+@import "./layout";
 @import "./icons";
 @import "./navigation";
 @import "./header";
 @import "./main";
 @import "./footer";
-body {
-  // background-image: url(../images/bg.jpg);
-  // opacity: 0.7;
-  background-size: auto;
-  background-position: top center;
-  background-repeat: no-repeat;
-}

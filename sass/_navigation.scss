@@ -1,28 +1,32 @@
 nav {
   font-size: 1.6em;
 }
+
 .navbar-toggler {
   margin-top: 25px;
   position: absolute;
-
   top: 0;
-
   right: 0;
 }
+
 .nav-link {
   letter-spacing: 2.5px;
 }
+
 .navbar-toggler-icon {
   width: 2.5em;
   height: 2.5em;
 }
+
 .navbar-dark .navbar-toggler {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
+
 @media screen and (max-width: 767px) {
   .navbar {
     display: block;
   }
+
   .navbar-nav {
     margin-top: 20px;
   }
@@ -32,19 +36,23 @@ nav {
     margin: 0;
     padding-left: 10px;
   }
+
   .navbar {
     height: 158px;
     max-width: 100%;
     margin: 0 auto;
+
     .navbar-nav {
       justify-content: space-evenly;
       width: 100%;
     }
   }
+
   #logo {
     position: relative;
     top: -11px;
   }
+
   .navbar-dark .navbar-nav .nav-link {
     color: $white;
     font-weight: bold;
@@ -55,9 +63,4 @@ nav {
   .navbar {
     max-width: 962px;
   }
-
-  // #nav-left {
-  //   // padding: 0 75px 0 0;
-  //   // justify-content: right;
-  // }
 }
